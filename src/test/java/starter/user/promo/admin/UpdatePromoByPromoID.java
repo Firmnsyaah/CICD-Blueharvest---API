@@ -14,7 +14,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class UpdatePromoByPromoID {
-    private static String correctUrl = "https://blueharvest.irvansn.com/v1/promos/70e4007a-41d5-4e11-a4cb-8789b94fa55a";
+    private static String correctUrl = "https://blueharvest.irvansn.com/v1/promos/1c6f1756-bbe5-4ba7-84ad-e9649fd4f0e5";
     private static String wrongUrl = "https://blueharvest.irvansn.com/v1/promos/invalid";
     private static final String VALID_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
 

@@ -80,12 +80,12 @@ public class CheckoutSummary {
 
         JSONArray transactionDetails = new JSONArray();
         JSONObject product1 = new JSONObject();
-        product1.put("product_id", "017ad4e5-37c5-4c99-b943-91d84766b3a9");
+        product1.put("product_id", "0f9e8acf-a1ca-45b9-874c-67b388278815");
         product1.put("quantity", 2);
         transactionDetails.put(product1);
 
         JSONObject product2 = new JSONObject();
-        product2.put("product_id", "48c0d410-c727-4be7-9cfc-46fdddde0e54");
+        product2.put("product_id", "d2b50067-eb73-4a19-af3e-e12a5a9c50ab");
         product2.put("quantity", 1);
         transactionDetails.put(product2);
 

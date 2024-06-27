@@ -25,7 +25,7 @@ public class CreateNewFarmInvest {
     @Step("I send a POST request to create a new farm investment")
     public void sendCreateFarmInvestRequest() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("farm_id", "fdd92bdd-f23b-491a-9b62-930ea2e23216");
+        requestBody.put("farm_id", "0b6aada0-f5d4-49e2-889d-b790c022eb9c");
         requestBody.put("investment_amount", "6500000");
 
         SerenityRest.given()

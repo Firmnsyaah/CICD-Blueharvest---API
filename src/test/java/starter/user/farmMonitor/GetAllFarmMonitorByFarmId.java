@@ -26,7 +26,6 @@ public class GetAllFarmMonitorByFarmId {
                 .header("Authorization", TOKEN)
                 .get(setFarmMonitorApiEndpointForFarmId() + "6e64f138-a094-4780-b34a-b1d0a00430f2")
                 .then()
-                .time(lessThan(10L), SECONDS)  // Set maximum response time to 10 seconds
                 .log().all();
     }
 

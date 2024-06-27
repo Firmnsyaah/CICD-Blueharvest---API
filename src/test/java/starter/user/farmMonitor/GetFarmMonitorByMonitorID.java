@@ -22,7 +22,7 @@ public class GetFarmMonitorByMonitorID {
     public void sendGetRequestToGetAllFarmMonitorsByFarmId() {
         SerenityRest.given()
                 .header("Authorization", TOKEN)
-                .get(setFarmMonitorApiEndpointForFarmId() + "df0a0283-daa3-4cb3-bf54-d0d246ed63e8");
+                .get(setFarmMonitorApiEndpointForFarmId() + "4dab502c-8dcc-49ad-b294-8f83b0d0313b");
     }
 
     @Step("I receive status code 200")
