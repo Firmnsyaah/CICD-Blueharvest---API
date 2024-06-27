@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "farm_id": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "ph": {
+          "type": "number"
+        },
+        "dissolved_oxygen": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "farm_id",
+        "temperature",
+        "ph",
+        "dissolved_oxygen"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

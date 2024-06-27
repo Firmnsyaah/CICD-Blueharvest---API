@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "sub_total": {
+          "type": "number"
+        },
+        "tax": {
+          "type": "number"
+        },
+        "discount": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        },
+        "promo": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "code",
+            "status",
+            "amount"
+          ]
+        },
+        "courier": {
+          "type": "object",
+          "properties": {
+            "destination_address": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "city_id": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state_id": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "zip_code": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "address",
+                "city_id",
+                "city",
+                "state_id",
+                "state",
+                "zip_code",
+                "country",
+                "longitude",
+                "latitude"
+              ]
+            },
+            "name": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "destination_address",
+            "name",
+            "fee",
+            "type"
+          ]
+        },
+        "transaction_details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "product": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "number"
+                  },
+                  "thumbnail": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "price",
+                  "thumbnail"
+                ]
+              },
+              "quantity": {
+                "type": "number"
+              },
+              "total_price": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "product",
+              "quantity",
+              "total_price"
+            ]
+          }
+        }
+      },
+      "required": [
+        "sub_total",
+        "tax",
+        "discount",
+        "total",
+        "promo",
+        "courier",
+        "transaction_details"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

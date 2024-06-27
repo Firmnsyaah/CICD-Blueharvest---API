@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "customer": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "phone_number": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "phone_number"
+          ]
+        },
+        "sub_total": {
+          "type": "number"
+        },
+        "tax": {
+          "type": "number"
+        },
+        "discount": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        },
+        "payment": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "external_id": {
+              "type": "string"
+            },
+            "invoice_url": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "external_id",
+            "invoice_url",
+            "status",
+            "amount"
+          ]
+        },
+        "courier": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "destination_address_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "destination_address_id",
+            "name",
+            "fee",
+            "type"
+          ]
+        },
+        "transaction_details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "product": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "number"
+                  },
+                  "thumbnail": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "price",
+                  "thumbnail"
+                ]
+              },
+              "quantity": {
+                "type": "number"
+              },
+              "total_price": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "id",
+              "product",
+              "quantity",
+              "total_price"
+            ]
+          }
+        },
+        "created_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "customer",
+        "sub_total",
+        "tax",
+        "discount",
+        "total",
+        "payment",
+        "courier",
+        "transaction_details",
+        "created_at"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}
