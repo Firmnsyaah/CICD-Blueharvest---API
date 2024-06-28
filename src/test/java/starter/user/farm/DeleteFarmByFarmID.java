@@ -10,7 +10,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DeleteFarmByFarmID {
-    private static String apiUrl = "https://blueharvest.irvansn.com/v1/farms/33719efc-a4ca-4b36-b57c-af3388ea73eb";
+    private static String apiUrl = "https://blueharvest.irvansn.com/v1/farms/7169fcde-98cc-4ed7-8c9b-5055b1cdf5f5";
     private static String wrongUrl = "https://blueharvest.irvansn.com/v1/invalid-farms";
     private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
 
@@ -21,13 +21,16 @@ public class DeleteFarmByFarmID {
     }
 
     @Step("I set an invalid farm API endpoint for deleting farm by FarmID")
-    public String setWrongApiEndpoint() {
+    public String
+    setWrongApiEndpoint() {
         return wrongUrl;
     }
 
     @Step("I send DELETE request to delete farm by FarmID")
-    public void sendDeleteFarmRequest() {
-        SerenityRest.delete(setApiEndpoint());
+    public void sendDeleteFarmRequest(){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + TOKEN)
+                .delete(setApiEndpoint());
     }
 
     @Step("I send DELETE request to delete farm by invalid endpoint")
