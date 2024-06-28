@@ -52,7 +52,7 @@ public class GetAllFarmMonitorByFarmId {
     public void sendGetRequestToGetAllFarmMonitorsByInvalidFarmId() {
         SerenityRest.given()
                 .header("Authorization", TOKEN)
-                .get(setFarmMonitorApiEndpointForFarmId() + "9j54h948-f874-4780-b34a-b1d0a00450h8");
+                .get(setFarmMonitorApiEndpointForFarmId() + "4h87f987-a094-4780-b34a-b1d0a00430f2");
     }
 
     @Step("I receive status code 400")

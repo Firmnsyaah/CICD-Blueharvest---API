@@ -14,7 +14,7 @@ public class GetProductByID {
 
     private static final String BASE_URL = "https://blueharvest.irvansn.com/v1/products/";
     private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
-    private static final String VALID_PRODUCT_ID = "966bd3db-5299-4d1c-8f4c-9963691283d8";
+    private static final String VALID_PRODUCT_ID = "c3b0dda4-785b-4d13-8601-224c8c829183";
     private static final String INVALID_PRODUCT_ID = "aa0af000-40e9-4ed2-b00d-054180b00000";
 
     @Step("I set API endpoint for retrieving a product")

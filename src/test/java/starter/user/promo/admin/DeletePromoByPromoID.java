@@ -10,7 +10,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DeletePromoByPromoID {
-    private static String apiUrl = "https://blueharvest.irvansn.com/v1/promos/023721ba-245f-4018-862d-5727d3a106ca";
+    private static String apiUrl = "https://blueharvest.irvansn.com/v1/promos/8121e42e-0992-46ff-830e-32f02c8576b5";
     private static String wrongUrl = "https://blueharvest.irvansn.com/v1/ebf588aa-6e35-472f-a982-ddcdb014fc1g";
     private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
 

@@ -14,7 +14,7 @@ public class DeleteProductByID {
 
     private static final String BASE_URL = "https://blueharvest.irvansn.com/v1/products/";
     private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
-    private static final String VALID_PRODUCT_ID = "f479748c-c31a-4817-b7c6-ae99b40ea5b6";
+    private static final String VALID_PRODUCT_ID = "f6c897e6-0f63-475a-83a2-6d4de9891552";
     private static final String INVALID_PRODUCT_ID = "g9864532k-g83l-9832-b7c6-ae99b40ea5b6";
 
     @Step("I set API endpoint for deleting a product")

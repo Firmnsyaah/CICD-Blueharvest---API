@@ -17,7 +17,7 @@ public class GetFarmInvestByFarmInvestID {
 
     @Step("I set farm invest API endpoint for get farm invest by FarmInvestID")
     public String setFarmInvestApiEndpointForFarmInvestID() {
-        return BASE_URL + "/" + "aa7cfcd1-95d9-478b-aab8-3b63113f4c82";
+        return BASE_URL + "/" + "452210d8-b209-4958-a970-d73025695d40";
     }
 
     @Step("I send GET request to get farm invest by valid FarmInvestID")

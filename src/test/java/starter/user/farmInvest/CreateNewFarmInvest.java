@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class CreateNewFarmInvest {
     private static final String BASE_URL = "https://blueharvest.irvansn.com/v1/farms";
-    private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Yao";
+    private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjZiYTZkZGM2LTBkMWUtNGU3Mi1iODQ1LThiNjgwY2I2MjI0ZCIsIkVtYWlsIjoiaXJ2YW4tc3VyeWFAYmx1ZWhhcnZlc3QuY29tIiwiRnVsbE5hbWUiOiJJcnZhbiBTdXJ5YSIsIlJvbGUiOiJjdXN0b21lciIsImV4cCI6NDM0NzUzNjMxN30.duaDDvWwXt30FHiBG2x6KcaDOGOlwxTFdC4K6uC_Z5A";
     private static final String INVALID_TOKEN = "jdfhgGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImIwMWI0ZjkwLWEyNGYtNDc4YS1hYTQ1LTM4MTM1YWMyNDIwYiIsIkVtYWlsIjoiaXJ2YW4tc3VyeWEtYWRtaW4tMkBibHVlaGFydmVzdC5jb20iLCJGdWxsTmFtZSI6IklydmFuIiwiUm9sZSI6ImFkbWluIiwiZXhwIjo0MzQ3MDgwOTM2fQ.Msmd5l0mMjnXFk4B07Ue6KLqSHnmtp5429PlkW21Hoi";
 
     @Step("I set API endpoint for creating a new farm investment")
@@ -25,7 +25,7 @@ public class CreateNewFarmInvest {
     @Step("I send a POST request to create a new farm investment")
     public void sendCreateFarmInvestRequest() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("farm_id", "0b6aada0-f5d4-49e2-889d-b790c022eb9c");
+        requestBody.put("farm_id", "33e0e421-c97f-4996-87a1-b07570e6b265");
         requestBody.put("investment_amount", "6500000");
 
         SerenityRest.given()

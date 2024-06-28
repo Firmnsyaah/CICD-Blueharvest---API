@@ -29,7 +29,7 @@ public class GetFarmByFarmID {
     public void sendGetRequestToGetFarmByID() {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + TOKEN)
-                .get(setFarmApiEndpointForFarmByID() + "/884f2bb7-7780-4f9a-84db-f9653ec05659");
+                .get(setFarmApiEndpointForFarmByID() + "/d7ddc2cf-274f-4d61-8d16-de63bd6fdaff");
     }
 
     @Step("I send GET request to get farm by missing FarmID")

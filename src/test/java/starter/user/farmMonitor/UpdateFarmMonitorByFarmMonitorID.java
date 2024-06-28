@@ -15,7 +15,7 @@ public class UpdateFarmMonitorByFarmMonitorID {
 
     @Step("I set farm monitor API endpoint for editing farm monitor by FarmMonitorID")
     public String setApiEndpoint() {
-        return BASE_URL + "df0a0283-daa3-4cb3-bf54-d0d246ed63e8";
+        return BASE_URL + "4dab502c-8dcc-49ad-b294-8f83b0d0313b";
     }
 
     @Step("I set invalid farm monitor API endpoint for editing farm monitor by FarmMonitorID")
@@ -26,7 +26,7 @@ public class UpdateFarmMonitorByFarmMonitorID {
     @Step("I send PUT request to edit farm monitor by FarmMonitorID with valid authorization and data")
     public void sendPutRequestToEditFarmMonitorWithValidData() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("farm_id", "25346423-2460-4751-8873-ebcd19961a9b");
+        requestBody.put("farm_id", "2d5f05ec-c41b-420d-8253-b4e7606bffcb");
         requestBody.put("temperature", 25.617313845122542);
         requestBody.put("ph", 7.365703746556487);
         requestBody.put("dissolved_oxygen", 8.744452365506064);
